@@ -1,0 +1,51 @@
+.login-wrapper	{
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100vh;
+	background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(82,197,189,1) 100%);
+	
+}
+
+.login-con	{
+
+	width:26%;
+	//outline-style:dotted;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	gap:2.1em;
+	
+}
+
+.btn-login	{
+	
+	color:#52c5bd;
+	background:#fff;
+	padding:10px 50px;
+	font-weight:700;
+	border:none;
+	transition:0.5s ease;
+}
+
+.btn-login:hover	{
+	
+	color:#fff;
+	background:linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(82,197,189,0.6) 100%);;
+	padding:10px 50px;
+	transition:0.5s ease;
+	
+	
+}
+
+.logintxtbox	{
+	
+	padding:7px;
+	width:70%;
+	border:none;
+	
+}

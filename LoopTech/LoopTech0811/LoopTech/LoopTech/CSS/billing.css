@@ -1,0 +1,38 @@
+﻿* {
+
+   // outline-style:dotted;
+   // outline-color:red;
+
+}
+
+.bill-con	{
+
+	width:50%;
+	display:flex;
+	flex-direction:row;
+    justify-content:flex-end;
+    //outline-style:dotted;
+    //outline-color:red;
+	
+
+}
+
+.bill-subcon	{
+
+	width:40%;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	//gap:1em;
+		
+}
+
+.bill-ctrl	{
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	gap:1em;
+    padding:10px;
+	
+}

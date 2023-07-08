@@ -1,0 +1,953 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F105389-5FDC-42F0-9E6E-C7F7F68F7A0E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoopTech</RootNamespace>
+    <AssemblyName>LoopTech</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Admin\Admin\dashboard\Admin-Home-Page.aspx" />
+    <Content Include="Admin\Admin\assets\dist\css\bootstrap.min.css" />
+    <Content Include="Admin\Admin\assets\dist\css\bootstrap.rtl.min.css" />
+    <Content Include="Admin\Admin\assets\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Admin\Admin\dashboard\Blog-Dashboard.aspx" />
+    <Content Include="Admin\Admin\dashboard\CEOHome.aspx" />
+    <Content Include="Admin\Admin\dashboard\CEOLogin.aspx" />
+    <Content Include="Admin\Admin\dashboard\dashboard.css" />
+    <Content Include="Admin\Admin\dashboard\dashboard.js" />
+    <Content Include="Admin\Admin\dashboard\dashboard.rtl.css" />
+    <Content Include="Admin\Admin\dashboard\Delete-Dashboard.aspx" />
+    <Content Include="Admin\Admin\dashboard\Delete-Laptop.aspx" />
+    <Content Include="Admin\Admin\dashboard\Delete-Phone.aspx" />
+    <Content Include="Admin\Admin\dashboard\Delete-Watch.aspx" />
+    <Content Include="Admin\Admin\dashboard\DeleteLandingPage-Laptops.aspx" />
+    <Content Include="Admin\Admin\dashboard\DeleteLandingPage-Phones.aspx" />
+    <Content Include="Admin\Admin\dashboard\DeleteLandingPage-Watches.aspx" />
+    <Content Include="Admin\Admin\dashboard\hdhdh.aspx" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer-aspire-vero-core-i7-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_aspire-vero_core i7-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_aspire_vero_core i7-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\acer_chromebook_spin_713_core_i5-back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\acer_chromebook_spin_713_core_i5-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\acer_chromebook_spin_713_core_i5-View 2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_Predator_Helios_300-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_Predator_Helios_300-Side1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_Predator_Helios_300-Side2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_Swift_3-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_Swift_3-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Acer_Swift_3-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\acer_swift_5_core_i7-main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\acer_swift_5_core_i7-Side1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\acer_swift_5_core_i7-Side2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Apple_MacBook_Pro_16_Space_grey-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Apple_MacBook_Pro_16_Space_grey-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Apple_MacBook_Pro_16_Space_grey-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_expertBook_B1400-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_expertBook_B1400-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_expertBook_B1400-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_ExpertBook_B7_flip-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_ExpertBook_B7_flip-Fliped.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_ExpertBook_B7_flip-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_VivoBook_Pro_16x-main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_VivoBook_Pro_16x-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_VivoBook_Pro_16x-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_x415_core_i3-back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_x415_core_i3-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_x415_core_i3-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_ZenBook_14_ryzen_7 5700-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_ZenBook_14_ryzen_7_5700-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_ZenBook_14_ryzen_7_5700-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_Zenbook_Duo_UX14-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_Zenbook_Duo_UX14-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\ASUS_Zenbook_Duo_UX14-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_Zenbook_Flip_13-Flipped.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_Zenbook_Flip_13-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Asus_Zenbook_Flip_13-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell inspiron 15-5510-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell latitude 5420  Core i7-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_inspiron-15_5510 -Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_inspiron_15-5510-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_inspiron_16_5620-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_inspiron_16_5620-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_inspiron_16_5620-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_Latitude_3520_Core_i7-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_Latitude_3520_Core_i7-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_Latitude_3520_Core_i7-Top2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_latitude_5420 _Core_i7-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_latitude_5420_ Core_i7-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\dell_vostro_3500_core_i5-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\dell_vostro_3500_core_i5-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\dell_vostro_3500_core_i5-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_13_Plus_9320_Core-i7-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_13_Plus_9320_Core_i7-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_13_Plus_9320_Core_i7-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_15_9520-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_15_9520-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_15_9520-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_17_9270-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_17_9270-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Dell_XPS_17_9270-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Hp_ENVY_13_x360_Ryzer-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Hp_ENVY_13_x360_Ryzer-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Hp_ENVY_13_x360_Ryzer-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_ENVY_16_Core_i7-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_ENVY_16_Core_i7-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_ENVY_16_Core_i7-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_Pavilion_15_Core_i7-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_Pavilion_15_Core_i7-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_Pavilion_15_Core_i7-Side2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Hp_ProBook_470_g8-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Hp_ProBook_470_g8-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Hp_ProBook_470_g8-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_ProBook_640_g8_core i5-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_ProBook_640_g8_core_i5-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_ProBook_640_g8_core_i5-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_Spectre_16-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_Spectre_16-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\HP_Spectre_16-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Laptop Details.txt" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Macbook_Pro_16-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Macbook_Pro_16-Top.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Macbook_Pro_16-Top2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Pink_Apple_iMac_24-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Pink_Apple_iMac_24-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Pink_Apple_iMac_24-side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Silver_Apple_iMac_24-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Silver_Apple_iMac_24-Main.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Laptops\Silver_Apple_iMac_24-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Login.png" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\A03P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\A03P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\A03P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\A12P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\A12P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\A12P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\C20P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\C20P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\C20P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\G10P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\G10P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\G10P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I11P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I11P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I11P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I14P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I14P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I14P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I14proP1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I14proP2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I14proP3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I8P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I8P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\I8P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\M1P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\M1P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\M1P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\M31P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\M31P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\M31P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\O200P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\O200P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\O200P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OC2P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OC2P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OC2P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OP10proP1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OP10proP2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OP10proP3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OP9P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OP9P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\OP9P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\P50P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\P50P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\P50P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S10P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S10P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S10P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S13P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S13P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S13P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S20P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S20P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S20P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S21P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S21P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S21P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S22P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S22P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S22P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S23P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S23P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S23P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S32P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S32P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\S32P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SA53P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SA53P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SA53P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SFoldP1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SFoldP2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SFoldP3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SN10P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SN10P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SN10P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SXP1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SXP2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\SXP3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\XN10P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\XN10P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\XN10P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\XN11P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\XN11P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\XN11P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\Y6P1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\Y6P2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\Y6P3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\ZFLP1.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\ZFLP2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Phones\ZFLP3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Cactus_Mentor_Blue -Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Cactus_Mentor_Blue -Full.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Cactus_Mentor_green-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Cactus_Mentor_green-Full.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Cactus_Mentor_Pink -Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Cactus_Mentor_Pink -Full.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Funky_by_Fabulously-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Funky_by_Fabulously-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Girls Digital mid size watchaqua blue-Font.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Girls_Digital_mid_size_watchaqua_blue-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\jnew Red Fire Truck-Sided.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\jnew_ Red_Fire_Truck-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\jnew_Girl_Fashion_watches -Pink_Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\jnew_Girl_Fashion_watches -Pink_Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Mimbee_Time_Teach_Blue-Full.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Mimbee_Time_Teach_Blue-Sided.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Mimbee_Time_Teach_Grey -Full.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Mimbee_Time_Teach_Grey-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Q&amp;Q Kids_Digital-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Q&amp;Q_Kids_Digital-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\TWEENS_Smartwatch_Series_6 Pink-Sided.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\TWEENS_Smartwatch_Series_6_Pink-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Volkano_Kids-Watch_Pink -Sided.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Volkano_Kids_Watch_Blue-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Volkano_Kids_Watch_Blue-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Volkano_Kids_Watch_Pink-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Fit_bit_charge5_th2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Fit_bit_charge_5.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Fossil_Gen_5E_smart-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Fossil_Gen_5E_smart-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Fossil_Gen_LTE-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Fossil_Gen_LTE-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Galaxy_smart_Watch_4_Th2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Galaxy_smart_watch_th3.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Garmin_fenix_7X_Solar_Grey_mens-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Garmin_fenix_7X_Solar_Grey_mens-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men%27s_Eco_Drive_Date_Titanium-Bracelet_Strap_Watch-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men%27s_Eco_Drive_Date_Titanium-Bracelet_Strap_Watch-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men_Black_Led_Digital_Waterproof_Sport_Watch S3-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men_Black_Led_Digital_Waterproof_Sport_Watch_S3-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men_Blue_Led_Digital_Waterproof_Sport_Watch_S3-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men_Blue_Led_Digital_Waterproof_Sport_Watch_S3-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men_Red_Led_Digital_Waterproof_Sport_Watch_S3-Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Men_Red_Led_Digital_Waterproof_Sport_Watch_S3-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Samsung_galaxy_Watch4.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Samsung_galaxy_watch_4-Th2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Fitbit-4_special_edition-%28W%29.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Fitbit_Versa_2 -Back.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Fitbit_Versa_2 -Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Fitbit_Versa_3_Pink_Gold -Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Fitbit_Versa_3_Pink_Gold -Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Fitspecial_edition_%28W%29- th2.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Garmin_Vivomore_Sport_Mint-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Garmin_Vivomore_Sport_Mint-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Huawei band 6 Sakura Pink -Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Huawei-band-6-Sakura-Pink-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Samsung_Galaxy_Active_blue-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Samsung_Galaxy_Active_blue-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Samsung_Galaxy_Active_pink-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Samsung_Galaxy_Active_pink-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Samsung_Galaxy_Active_smart-Front.jpg" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Samsung_Galaxy_Active_smart-Side.jpg" />
+    <Content Include="Admin\Admin\dashboard\Insert-Dashboard.aspx" />
+    <Content Include="Admin\Admin\dashboard\Insert-New-Laptop.aspx" />
+    <Content Include="Admin\Admin\dashboard\Insert-New-Phone.aspx" />
+    <Content Include="Admin\Admin\dashboard\Insert-New-Watch.aspx" />
+    <Content Include="Admin\Admin\dashboard\LoginCSS.css" />
+    <Content Include="Admin\Admin\dashboard\LoopTech.css" />
+    <Content Include="Admin\Admin\dashboard\Report-Dashboard.aspx" />
+    <Content Include="Admin\Admin\dashboard\sidebars.css" />
+    <Content Include="Admin\Admin\dashboard\sidebars.js" />
+    <Content Include="Admin\Admin\dashboard\Update-Dashboard.aspx" />
+    <Content Include="Admin\Admin\dashboard\Update-Laptop.aspx" />
+    <Content Include="Admin\Admin\dashboard\Update-Phone.aspx" />
+    <Content Include="Admin\Admin\dashboard\Update-Watch.aspx" />
+    <Content Include="App_Data\Products.mdf" />
+    <Content Include="App_Data\Products_log.ldf">
+      <DependentUpon>Products.mdf</DependentUpon>
+    </Content>
+    <Content Include="Cart.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="CSS\billing.css" />
+    <Content Include="CSS\ContactUsCss.css" />
+    <Content Include="CSS\LoginCSS.css" />
+    <Content Include="CSS\LoopTech.css" />
+    <Content Include="CSS\ProductDisplay.css" />
+    <Content Include="CSS\Search.css" />
+    <Content Include="Images\Laptops\Acer-aspire-vero-core-i7-Side.jpg" />
+    <Content Include="Images\Laptops\Acer_aspire-vero_core i7-Back.jpg" />
+    <Content Include="Images\Laptops\Acer_aspire_vero_core i7-Main.jpg" />
+    <Content Include="Images\Laptops\acer_chromebook_spin_713_core_i5-back.jpg" />
+    <Content Include="Images\Laptops\acer_chromebook_spin_713_core_i5-Main.jpg" />
+    <Content Include="Images\Laptops\acer_chromebook_spin_713_core_i5-View 2.jpg" />
+    <Content Include="Images\Laptops\Acer_Predator_Helios_300-Main.jpg" />
+    <Content Include="Images\Laptops\Acer_Predator_Helios_300-Side1.jpg" />
+    <Content Include="Images\Laptops\Acer_Predator_Helios_300-Side2.jpg" />
+    <Content Include="Images\Laptops\Acer_Swift_3-Back.jpg" />
+    <Content Include="Images\Laptops\Acer_Swift_3-Main.jpg" />
+    <Content Include="Images\Laptops\Acer_Swift_3-Side.jpg" />
+    <Content Include="Images\Laptops\acer_swift_5_core_i7-main.jpg" />
+    <Content Include="Images\Laptops\acer_swift_5_core_i7-Side1.jpg" />
+    <Content Include="Images\Laptops\acer_swift_5_core_i7-Side2.jpg" />
+    <Content Include="Images\Laptops\Apple_MacBook_Pro_16_Space_grey-Main.jpg" />
+    <Content Include="Images\Laptops\Apple_MacBook_Pro_16_Space_grey-Side.jpg" />
+    <Content Include="Images\Laptops\Apple_MacBook_Pro_16_Space_grey-Top.jpg" />
+    <Content Include="Images\Laptops\ASUS_expertBook_B1400-Back.jpg" />
+    <Content Include="Images\Laptops\ASUS_expertBook_B1400-Main.jpg" />
+    <Content Include="Images\Laptops\ASUS_expertBook_B1400-Side.jpg" />
+    <Content Include="Images\Laptops\ASUS_ExpertBook_B7_flip-Back.jpg" />
+    <Content Include="Images\Laptops\ASUS_ExpertBook_B7_flip-Fliped.jpg" />
+    <Content Include="Images\Laptops\ASUS_ExpertBook_B7_flip-Main.jpg" />
+    <Content Include="Images\Laptops\ASUS_VivoBook_Pro_16x-main.jpg" />
+    <Content Include="Images\Laptops\ASUS_VivoBook_Pro_16x-Side.jpg" />
+    <Content Include="Images\Laptops\ASUS_VivoBook_Pro_16x-Top.jpg" />
+    <Content Include="Images\Laptops\Asus_x415_core_i3-back.jpg" />
+    <Content Include="Images\Laptops\Asus_x415_core_i3-Main.jpg" />
+    <Content Include="Images\Laptops\Asus_x415_core_i3-Side.jpg" />
+    <Content Include="Images\Laptops\Asus_ZenBook_14_ryzen_7 5700-Side.jpg" />
+    <Content Include="Images\Laptops\Asus_ZenBook_14_ryzen_7_5700-Back.jpg" />
+    <Content Include="Images\Laptops\Asus_ZenBook_14_ryzen_7_5700-Main.jpg" />
+    <Content Include="Images\Laptops\ASUS_Zenbook_Duo_UX14-Back.jpg" />
+    <Content Include="Images\Laptops\ASUS_Zenbook_Duo_UX14-Main.jpg" />
+    <Content Include="Images\Laptops\ASUS_Zenbook_Duo_UX14-Top.jpg" />
+    <Content Include="Images\Laptops\Asus_Zenbook_Flip_13-Flipped.jpg" />
+    <Content Include="Images\Laptops\Asus_Zenbook_Flip_13-Main.jpg" />
+    <Content Include="Images\Laptops\Asus_Zenbook_Flip_13-Top.jpg" />
+    <Content Include="Images\Laptops\Dell inspiron 15-5510-Side.jpg" />
+    <Content Include="Images\Laptops\Dell latitude 5420  Core i7-Top.jpg" />
+    <Content Include="Images\Laptops\Dell_inspiron-15_5510 -Main.jpg" />
+    <Content Include="Images\Laptops\Dell_inspiron_15-5510-Top.jpg" />
+    <Content Include="Images\Laptops\Dell_inspiron_16_5620-Main.jpg" />
+    <Content Include="Images\Laptops\Dell_inspiron_16_5620-Side.jpg" />
+    <Content Include="Images\Laptops\Dell_inspiron_16_5620-Top.jpg" />
+    <Content Include="Images\Laptops\Dell_Latitude_3520_Core_i7-Main.jpg" />
+    <Content Include="Images\Laptops\Dell_Latitude_3520_Core_i7-Top.jpg" />
+    <Content Include="Images\Laptops\Dell_Latitude_3520_Core_i7-Top2.jpg" />
+    <Content Include="Images\Laptops\Dell_latitude_5420 _Core_i7-Side.jpg" />
+    <Content Include="Images\Laptops\Dell_latitude_5420_ Core_i7-Main.jpg" />
+    <Content Include="Images\Laptops\dell_vostro_3500_core_i5-Main.jpg" />
+    <Content Include="Images\Laptops\dell_vostro_3500_core_i5-Side.jpg" />
+    <Content Include="Images\Laptops\dell_vostro_3500_core_i5-Top.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_13_Plus_9320_Core-i7-Side.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_13_Plus_9320_Core_i7-Main.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_13_Plus_9320_Core_i7-Top.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_15_9520-Back.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_15_9520-Main.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_15_9520-Top.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_17_9270-Main.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_17_9270-Side.jpg" />
+    <Content Include="Images\Laptops\Dell_XPS_17_9270-Top.jpg" />
+    <Content Include="Images\Laptops\Hp_ENVY_13_x360_Ryzer-Back.jpg" />
+    <Content Include="Images\Laptops\Hp_ENVY_13_x360_Ryzer-Main.jpg" />
+    <Content Include="Images\Laptops\Hp_ENVY_13_x360_Ryzer-Side.jpg" />
+    <Content Include="Images\Laptops\HP_ENVY_16_Core_i7-Back.jpg" />
+    <Content Include="Images\Laptops\HP_ENVY_16_Core_i7-Main.jpg" />
+    <Content Include="Images\Laptops\HP_ENVY_16_Core_i7-Side.jpg" />
+    <Content Include="Images\Laptops\HP_Pavilion_15_Core_i7-Main.jpg" />
+    <Content Include="Images\Laptops\HP_Pavilion_15_Core_i7-Side.jpg" />
+    <Content Include="Images\Laptops\HP_Pavilion_15_Core_i7-Side2.jpg" />
+    <Content Include="Images\Laptops\Hp_ProBook_470_g8-Back.jpg" />
+    <Content Include="Images\Laptops\Hp_ProBook_470_g8-Main.jpg" />
+    <Content Include="Images\Laptops\Hp_ProBook_470_g8-Side.jpg" />
+    <Content Include="Images\Laptops\HP_ProBook_640_g8_core i5-Main.jpg" />
+    <Content Include="Images\Laptops\HP_ProBook_640_g8_core_i5-Back.jpg" />
+    <Content Include="Images\Laptops\HP_ProBook_640_g8_core_i5-Side.jpg" />
+    <Content Include="Images\Laptops\HP_Spectre_16-Main.jpg" />
+    <Content Include="Images\Laptops\HP_Spectre_16-Side.jpg" />
+    <Content Include="Images\Laptops\HP_Spectre_16-Top.jpg" />
+    <Content Include="Images\Laptops\Laptop Details.txt" />
+    <Content Include="Images\Laptops\Macbook_Pro_16-Main.jpg" />
+    <Content Include="Images\Laptops\Macbook_Pro_16-Top.jpg" />
+    <Content Include="Images\Laptops\Macbook_Pro_16-Top2.jpg" />
+    <Content Include="Images\Laptops\Pink_Apple_iMac_24-Back.jpg" />
+    <Content Include="Images\Laptops\Pink_Apple_iMac_24-Main.jpg" />
+    <Content Include="Images\Laptops\Pink_Apple_iMac_24-side.jpg" />
+    <Content Include="Images\Laptops\Silver_Apple_iMac_24-Back.jpg" />
+    <Content Include="Images\Laptops\Silver_Apple_iMac_24-Main.jpg" />
+    <Content Include="Images\Laptops\Silver_Apple_iMac_24-Side.jpg" />
+    <Content Include="Images\Phones\A03P1.jpg" />
+    <Content Include="Images\Phones\A03P2.jpg" />
+    <Content Include="Images\Phones\A03P3.jpg" />
+    <Content Include="Images\Phones\A12P1.jpg" />
+    <Content Include="Images\Phones\A12P2.jpg" />
+    <Content Include="Images\Phones\A12P3.jpg" />
+    <Content Include="Images\Phones\C20P1.jpg" />
+    <Content Include="Images\Phones\C20P2.jpg" />
+    <Content Include="Images\Phones\C20P3.jpg" />
+    <Content Include="Images\Phones\G10P1.jpg" />
+    <Content Include="Images\Phones\G10P2.jpg" />
+    <Content Include="Images\Phones\G10P3.jpg" />
+    <Content Include="Images\Phones\I11P1.jpg" />
+    <Content Include="Images\Phones\I11P2.jpg" />
+    <Content Include="Images\Phones\I11P3.jpg" />
+    <Content Include="Images\Phones\I14P1.jpg" />
+    <Content Include="Images\Phones\I14P2.jpg" />
+    <Content Include="Images\Phones\I14P3.jpg" />
+    <Content Include="Images\Phones\I14proP1.jpg" />
+    <Content Include="Images\Phones\I14proP2.jpg" />
+    <Content Include="Images\Phones\I14proP3.jpg" />
+    <Content Include="Images\Phones\I8P1.jpg" />
+    <Content Include="Images\Phones\I8P2.jpg" />
+    <Content Include="Images\Phones\I8P3.jpg" />
+    <Content Include="Images\Phones\M1P1.jpg" />
+    <Content Include="Images\Phones\M1P2.jpg" />
+    <Content Include="Images\Phones\M1P3.jpg" />
+    <Content Include="Images\Phones\M31P1.jpg" />
+    <Content Include="Images\Phones\M31P2.jpg" />
+    <Content Include="Images\Phones\M31P3.jpg" />
+    <Content Include="Images\Phones\O200P1.jpg" />
+    <Content Include="Images\Phones\O200P2.jpg" />
+    <Content Include="Images\Phones\O200P3.jpg" />
+    <Content Include="Images\Phones\OC2P1.jpg" />
+    <Content Include="Images\Phones\OC2P2.jpg" />
+    <Content Include="Images\Phones\OC2P3.jpg" />
+    <Content Include="Images\Phones\OP10proP1.jpg" />
+    <Content Include="Images\Phones\OP10proP2.jpg" />
+    <Content Include="Images\Phones\OP10proP3.jpg" />
+    <Content Include="Images\Phones\OP9P1.jpg" />
+    <Content Include="Images\Phones\OP9P2.jpg" />
+    <Content Include="Images\Phones\OP9P3.jpg" />
+    <Content Include="Images\Phones\P50P1.jpg" />
+    <Content Include="Images\Phones\P50P2.jpg" />
+    <Content Include="Images\Phones\P50P3.jpg" />
+    <Content Include="Images\Phones\S10P1.jpg" />
+    <Content Include="Images\Phones\S10P2.jpg" />
+    <Content Include="Images\Phones\S10P3.jpg" />
+    <Content Include="Images\Phones\S13P1.jpg" />
+    <Content Include="Images\Phones\S13P2.jpg" />
+    <Content Include="Images\Phones\S13P3.jpg" />
+    <Content Include="Images\Phones\S20P1.jpg" />
+    <Content Include="Images\Phones\S20P2.jpg" />
+    <Content Include="Images\Phones\S20P3.jpg" />
+    <Content Include="Images\Phones\S21P1.jpg" />
+    <Content Include="Images\Phones\S21P2.jpg" />
+    <Content Include="Images\Phones\S21P3.jpg" />
+    <Content Include="Images\Phones\S22P1.jpg" />
+    <Content Include="Images\Phones\S22P2.jpg" />
+    <Content Include="Images\Phones\S22P3.jpg" />
+    <Content Include="Images\Phones\S23P1.jpg" />
+    <Content Include="Images\Phones\S23P2.jpg" />
+    <Content Include="Images\Phones\S23P3.jpg" />
+    <Content Include="Images\Phones\S32P1.jpg" />
+    <Content Include="Images\Phones\S32P2.jpg" />
+    <Content Include="Images\Phones\S32P3.jpg" />
+    <Content Include="Images\Phones\SA53P1.jpg" />
+    <Content Include="Images\Phones\SA53P2.jpg" />
+    <Content Include="Images\Phones\SA53P3.jpg" />
+    <Content Include="Images\Phones\SFoldP1.jpg" />
+    <Content Include="Images\Phones\SFoldP2.jpg" />
+    <Content Include="Images\Phones\SFoldP3.jpg" />
+    <Content Include="Images\Phones\SN10P1.jpg" />
+    <Content Include="Images\Phones\SN10P2.jpg" />
+    <Content Include="Images\Phones\SN10P3.jpg" />
+    <Content Include="Images\Phones\SXP1.jpg" />
+    <Content Include="Images\Phones\SXP2.jpg" />
+    <Content Include="Images\Phones\SXP3.jpg" />
+    <Content Include="Images\Phones\XN10P1.jpg" />
+    <Content Include="Images\Phones\XN10P2.jpg" />
+    <Content Include="Images\Phones\XN10P3.jpg" />
+    <Content Include="Images\Phones\XN11P1.jpg" />
+    <Content Include="Images\Phones\XN11P2.jpg" />
+    <Content Include="Images\Phones\XN11P3.jpg" />
+    <Content Include="Images\Phones\Y6P1.jpg" />
+    <Content Include="Images\Phones\Y6P2.jpg" />
+    <Content Include="Images\Phones\Y6P3.jpg" />
+    <Content Include="Images\Phones\ZFLP1.jpg" />
+    <Content Include="Images\Phones\ZFLP2.jpg" />
+    <Content Include="Images\Phones\ZFLP3.jpg" />
+    <Content Include="Laptops.aspx" />
+    <Content Include="looptechstock\Banners\a.jpg" />
+    <Content Include="looptechstock\Banners\Phone-Search-Banner.jpg" />
+    <Content Include="looptechstock\images\acer.png" />
+    <Content Include="looptechstock\images\AppleLogo.png" />
+    <Content Include="looptechstock\images\BusinessMeetingPicture.jpg" />
+    <Content Include="looptechstock\images\BusinessPic.png" />
+    <Content Include="looptechstock\images\Dell.png" />
+    <Content Include="looptechstock\images\hp.png" />
+    <Content Include="looptechstock\images\huawei.png" />
+    <Content Include="looptechstock\images\lenovo.png" />
+    <Content Include="looptechstock\images\samsung.png" />
+    <Content Include="looptechstock\images\xiaomi.png" />
+    <Content Include="PhoneLandingPage.aspx" />
+    <Content Include="Images\Watches\Kids\Cactus_Mentor_Blue -Front.jpg" />
+    <Content Include="Images\Watches\Kids\Cactus_Mentor_Blue -Full.jpg" />
+    <Content Include="Images\Watches\Kids\Cactus_Mentor_green-Front.jpg" />
+    <Content Include="Images\Watches\Kids\Cactus_Mentor_green-Full.jpg" />
+    <Content Include="Images\Watches\Kids\Cactus_Mentor_Pink -Front.jpg" />
+    <Content Include="Images\Watches\Kids\Cactus_Mentor_Pink -Full.jpg" />
+    <Content Include="Images\Watches\Kids\Funky_by_Fabulously-Back.jpg" />
+    <Content Include="Images\Watches\Kids\Funky_by_Fabulously-Front.jpg" />
+    <Content Include="Images\Watches\Kids\Girls Digital mid size watchaqua blue-Font.jpg" />
+    <Content Include="Images\Watches\Kids\Girls_Digital_mid_size_watchaqua_blue-Back.jpg" />
+    <Content Include="Images\Watches\Kids\jnew Red Fire Truck-Sided.jpg" />
+    <Content Include="Images\Watches\Kids\jnew_ Red_Fire_Truck-Front.jpg" />
+    <Content Include="Images\Watches\Kids\jnew_Girl_Fashion_watches -Pink_Front.jpg" />
+    <Content Include="Images\Watches\Kids\jnew_Girl_Fashion_watches -Pink_Side.jpg" />
+    <Content Include="Images\Watches\Kids\Mimbee_Time_Teach_Blue-Full.jpg" />
+    <Content Include="Images\Watches\Kids\Mimbee_Time_Teach_Blue-Sided.jpg" />
+    <Content Include="Images\Watches\Kids\Mimbee_Time_Teach_Grey -Full.jpg" />
+    <Content Include="Images\Watches\Kids\Mimbee_Time_Teach_Grey-Front.jpg" />
+    <Content Include="Images\Watches\Kids\Q&amp;Q Kids_Digital-Front.jpg" />
+    <Content Include="Images\Watches\Kids\Q&amp;Q_Kids_Digital-Back.jpg" />
+    <Content Include="Images\Watches\Kids\TWEENS_Smartwatch_Series_6 Pink-Sided.jpg" />
+    <Content Include="Images\Watches\Kids\TWEENS_Smartwatch_Series_6_Pink-Front.jpg" />
+    <Content Include="Images\Watches\Kids\Volkano_Kids-Watch_Pink -Sided.jpg" />
+    <Content Include="Images\Watches\Kids\Volkano_Kids_Watch_Blue-Back.jpg" />
+    <Content Include="Images\Watches\Kids\Volkano_Kids_Watch_Blue-Front.jpg" />
+    <Content Include="Images\Watches\Kids\Volkano_Kids_Watch_Pink-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Fit_bit_charge5_th2.jpg" />
+    <Content Include="Images\Watches\Mens\Fit_bit_charge_5.jpg" />
+    <Content Include="Images\Watches\Mens\Fossil_Gen_5E_smart-Back.jpg" />
+    <Content Include="Images\Watches\Mens\Fossil_Gen_5E_smart-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Fossil_Gen_LTE-Back.jpg" />
+    <Content Include="Images\Watches\Mens\Fossil_Gen_LTE-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Galaxy_smart_Watch_4_Th2.jpg" />
+    <Content Include="Images\Watches\Mens\Galaxy_smart_watch_th3.jpg" />
+    <Content Include="Images\Watches\Mens\Garmin_fenix_7X_Solar_Grey_mens-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Garmin_fenix_7X_Solar_Grey_mens-Side.jpg" />
+    <Content Include="Images\Watches\Mens\Men%27s_Eco_Drive_Date_Titanium-Bracelet_Strap_Watch-Back.jpg" />
+    <Content Include="Images\Watches\Mens\Men%27s_Eco_Drive_Date_Titanium-Bracelet_Strap_Watch-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Men_Black_Led_Digital_Waterproof_Sport_Watch S3-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Men_Black_Led_Digital_Waterproof_Sport_Watch_S3-Back.jpg" />
+    <Content Include="Images\Watches\Mens\Men_Blue_Led_Digital_Waterproof_Sport_Watch_S3-Back.jpg" />
+    <Content Include="Images\Watches\Mens\Men_Blue_Led_Digital_Waterproof_Sport_Watch_S3-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Men_Red_Led_Digital_Waterproof_Sport_Watch_S3-Back.jpg" />
+    <Content Include="Images\Watches\Mens\Men_Red_Led_Digital_Waterproof_Sport_Watch_S3-Front.jpg" />
+    <Content Include="Images\Watches\Mens\Samsung_galaxy_Watch4.jpg" />
+    <Content Include="Images\Watches\Mens\Samsung_galaxy_watch_4-Th2.jpg" />
+    <Content Include="Images\Watches\Womens\Fitbit-4_special_edition-%28W%29.jpg" />
+    <Content Include="Images\Watches\Womens\Fitbit_Versa_2 -Back.jpg" />
+    <Content Include="Images\Watches\Womens\Fitbit_Versa_2 -Side.jpg" />
+    <Content Include="Images\Watches\Womens\Fitbit_Versa_3_Pink_Gold -Front.jpg" />
+    <Content Include="Images\Watches\Womens\Fitbit_Versa_3_Pink_Gold -Side.jpg" />
+    <Content Include="Images\Watches\Womens\Fitspecial_edition_%28W%29- th2.jpg" />
+    <Content Include="Images\Watches\Womens\Garmin_Vivomore_Sport_Mint-Front.jpg" />
+    <Content Include="Images\Watches\Womens\Garmin_Vivomore_Sport_Mint-Side.jpg" />
+    <Content Include="Images\Watches\Womens\Huawei band 6 Sakura Pink -Side.jpg" />
+    <Content Include="Images\Watches\Womens\Huawei-band-6-Sakura-Pink-Front.jpg" />
+    <Content Include="Images\Watches\Womens\Samsung_Galaxy_Active_blue-Front.jpg" />
+    <Content Include="Images\Watches\Womens\Samsung_Galaxy_Active_blue-Side.jpg" />
+    <Content Include="Images\Watches\Womens\Samsung_Galaxy_Active_pink-Front.jpg" />
+    <Content Include="Images\Watches\Womens\Samsung_Galaxy_Active_pink-Side.jpg" />
+    <Content Include="Images\Watches\Womens\Samsung_Galaxy_Active_smart-Front.jpg" />
+    <Content Include="Images\Watches\Womens\Samsung_Galaxy_Active_smart-Side.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="looptechstock\Banners\Acer-98049262-Helios_300_main_Medium.jpg" />
+    <Content Include="looptechstock\Banners\AcerPredatorBannerWithoutText.jpg" />
+    <Content Include="looptechstock\Banners\AcerPredatorBannerWithText.jpg" />
+    <Content Include="looptechstock\Banners\AppleBanner.jpg" />
+    <Content Include="looptechstock\Banners\GalaxyWatch4.jpg" />
+    <Content Include="looptechstock\Banners\iPhone14.jpg" />
+    <Content Include="looptechstock\Banners\Laptop-Search-Banner.jpg" />
+    <Content Include="looptechstock\Banners\LaptopSetup.jpg" />
+    <Content Include="looptechstock\Banners\MacBookBanner.jpg" />
+    <Content Include="looptechstock\Banners\PhoneBanner.jpg" />
+    <Content Include="looptechstock\Banners\social-ban.png" />
+    <Content Include="looptechstock\Banners\social-ban.svg" />
+    <Content Include="looptechstock\Banners\Watches-Search-Banner.jpg" />
+    <Content Include="looptechstock\images\blurp.png" />
+    <Content Include="looptechstock\images\businessing.jpg" />
+    <Content Include="looptechstock\images\cart.png" />
+    <Content Include="looptechstock\images\contact-bannerCopy.png" />
+    <Content Include="looptechstock\images\data.jpg" />
+    <Content Include="looptechstock\images\facebook.png" />
+    <Content Include="looptechstock\images\help.jpg" />
+    <Content Include="looptechstock\images\help.png" />
+    <Content Include="looptechstock\images\instagram.png" />
+    <Content Include="looptechstock\images\Laptop.png" />
+    <Content Include="looptechstock\images\linkden.png" />
+    <Content Include="looptechstock\images\Login.png" />
+    <Content Include="looptechstock\images\LOOP.jpg" />
+    <Content Include="looptechstock\images\LoopLogo.svg" />
+    <Content Include="looptechstock\images\LoopTeal.png" />
+    <Content Include="looptechstock\images\loopteasml.png" />
+    <Content Include="looptechstock\images\LoopTech.png" />
+    <Content Include="looptechstock\images\minecraft.jpg" />
+    <Content Include="looptechstock\images\Smartphones.png" />
+    <Content Include="looptechstock\images\Smartwatches.png" />
+    <Content Include="looptechstock\images\Support.png" />
+    <Content Include="looptechstock\images\twitter.png" />
+    <Content Include="looptechstock\images\wishlist.png" />
+    <Content Include="Phones.aspx" />
+    <Content Include="ProductLanding.aspx" />
+    <Content Include="User-Home-Page.aspx" />
+    <Content Include="Watches.aspx" />
+    <Content Include="WatchesLandingPage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Admin-Home-Page.aspx.cs">
+      <DependentUpon>Admin-Home-Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Admin-Home-Page.aspx.designer.cs">
+      <DependentUpon>Admin-Home-Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Blog-Dashboard.aspx.cs">
+      <DependentUpon>Blog-Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Blog-Dashboard.aspx.designer.cs">
+      <DependentUpon>Blog-Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\CEOHome.aspx.cs">
+      <DependentUpon>CEOHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\CEOHome.aspx.designer.cs">
+      <DependentUpon>CEOHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\CEOLogin.aspx.cs">
+      <DependentUpon>CEOLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\CEOLogin.aspx.designer.cs">
+      <DependentUpon>CEOLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Dashboard.aspx.cs">
+      <DependentUpon>Delete-Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Dashboard.aspx.designer.cs">
+      <DependentUpon>Delete-Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Laptop.aspx.cs">
+      <DependentUpon>Delete-Laptop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Laptop.aspx.designer.cs">
+      <DependentUpon>Delete-Laptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Phone.aspx.cs">
+      <DependentUpon>Delete-Phone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Phone.aspx.designer.cs">
+      <DependentUpon>Delete-Phone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Watch.aspx.cs">
+      <DependentUpon>Delete-Watch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Delete-Watch.aspx.designer.cs">
+      <DependentUpon>Delete-Watch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\DeleteLandingPage-Laptops.aspx.cs">
+      <DependentUpon>DeleteLandingPage-Laptops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\DeleteLandingPage-Laptops.aspx.designer.cs">
+      <DependentUpon>DeleteLandingPage-Laptops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\DeleteLandingPage-Phones.aspx.cs">
+      <DependentUpon>DeleteLandingPage-Phones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\DeleteLandingPage-Phones.aspx.designer.cs">
+      <DependentUpon>DeleteLandingPage-Phones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\DeleteLandingPage-Watches.aspx.cs">
+      <DependentUpon>DeleteLandingPage-Watches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\DeleteLandingPage-Watches.aspx.designer.cs">
+      <DependentUpon>DeleteLandingPage-Watches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\hdhdh.aspx.cs">
+      <DependentUpon>hdhdh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\hdhdh.aspx.designer.cs">
+      <DependentUpon>hdhdh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-Dashboard.aspx.cs">
+      <DependentUpon>Insert-Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-Dashboard.aspx.designer.cs">
+      <DependentUpon>Insert-Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-New-Laptop.aspx.cs">
+      <DependentUpon>Insert-New-Laptop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-New-Laptop.aspx.designer.cs">
+      <DependentUpon>Insert-New-Laptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-New-Phone.aspx.cs">
+      <DependentUpon>Insert-New-Phone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-New-Phone.aspx.designer.cs">
+      <DependentUpon>Insert-New-Phone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-New-Watch.aspx.cs">
+      <DependentUpon>Insert-New-Watch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Insert-New-Watch.aspx.designer.cs">
+      <DependentUpon>Insert-New-Watch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Report-Dashboard.aspx.cs">
+      <DependentUpon>Report-Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Report-Dashboard.aspx.designer.cs">
+      <DependentUpon>Report-Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Dashboard.aspx.cs">
+      <DependentUpon>Update-Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Dashboard.aspx.designer.cs">
+      <DependentUpon>Update-Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Laptop.aspx.cs">
+      <DependentUpon>Update-Laptop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Laptop.aspx.designer.cs">
+      <DependentUpon>Update-Laptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Phone.aspx.cs">
+      <DependentUpon>Update-Phone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Phone.aspx.designer.cs">
+      <DependentUpon>Update-Phone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Watch.aspx.cs">
+      <DependentUpon>Update-Watch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin\dashboard\Update-Watch.aspx.designer.cs">
+      <DependentUpon>Update-Watch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laptops.aspx.cs">
+      <DependentUpon>Laptops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laptops.aspx.designer.cs">
+      <DependentUpon>Laptops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneLandingPage.aspx.cs">
+      <DependentUpon>PhoneLandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhoneLandingPage.aspx.designer.cs">
+      <DependentUpon>PhoneLandingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Phones.aspx.cs">
+      <DependentUpon>Phones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Phones.aspx.designer.cs">
+      <DependentUpon>Phones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductLanding.aspx.cs">
+      <DependentUpon>ProductLanding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductLanding.aspx.designer.cs">
+      <DependentUpon>ProductLanding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User-Home-Page.aspx.cs">
+      <DependentUpon>User-Home-Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User-Home-Page.aspx.designer.cs">
+      <DependentUpon>User-Home-Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Watches.aspx.cs">
+      <DependentUpon>Watches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Watches.aspx.designer.cs">
+      <DependentUpon>Watches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WatchesLandingPage.aspx.cs">
+      <DependentUpon>WatchesLandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WatchesLandingPage.aspx.designer.cs">
+      <DependentUpon>WatchesLandingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User.Master" />
+    <Content Include="Images\Watches\Kids\Thumbs.db" />
+    <Content Include="Images\Watches\Mens\Thumbs.db" />
+    <Content Include="Images\Watches\Womens\Thumbs.db" />
+    <Content Include="Admin.Master" />
+    <Content Include="Admin\Admin\assets\dist\css\bootstrap.min.css.map" />
+    <Content Include="Admin\Admin\assets\dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Admin\Admin\assets\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Kids\Thumbs.db" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Mens\Thumbs.db" />
+    <Content Include="Admin\Admin\dashboard\Images\Watches\Womens\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52066</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

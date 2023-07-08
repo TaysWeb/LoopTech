@@ -1,0 +1,517 @@
+*	{
+
+	//outline-style:dotted;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.backgc		{
+
+	background-color:#52c5bd
+	
+}
+
+.custom-btn {
+	
+	text-decoration:none;
+	//text-transform:uppercase;
+	font-weight:600;
+	font-size:20px;
+	width:150px;
+	background-color:#52c5bd;
+	height:50px;
+	padding:10px 10px 10px 10px;
+	color:#fff;
+	transition:  linear 0.5s;
+	text-align:center;
+	border-radius:15px;
+	
+	
+}
+
+.custom-btn:hover {
+	
+	background-color:rgb(255, 255, 255);
+	background-color:#fff;
+	color:#52c5bd;
+	opacity:1;
+	//border:2px solid black;
+	
+	
+}
+
+.rm-btn {
+	
+	text-decoration:none;
+	//text-transform:uppercase;
+	font-weight:600;
+	font-size:16px;
+
+	background-color:#52c5bd;
+
+	padding:10px 10px 10px 10px;
+	color:#fff;
+	transition:  linear 0.5s;
+	text-align:center;
+	border-radius:0px;
+	
+	
+}
+
+.rm-btn:hover {
+	
+	background-color:rgb(255, 255, 255);
+	background-color:#fff;
+	color:#52c5bd;
+	opacity:1;
+	//border:2px solid black;
+	
+	
+}
+
+.mqe-text	a{
+	  
+	text-decoration:none;
+	transition:ease-in-out;
+	
+  }
+  
+.mqe-text a:hover	{
+
+	 text-decoration-line: underline;
+	text-decoration-style: wavy;
+	 text-decoration-color: #52c5bd;
+	text-underline-offset: 3px;
+
+	transition:ease-in-out;
+	
+}
+
+.blog-flex	{
+
+	display:flex;
+	justify-content:space-between;
+	flex-direction:row;
+	gap:3em;
+	
+}
+
+/* -----------Nav-------------- */
+
+.subheadercon	{
+	
+	width:70%;
+	
+	
+}
+
+.nav-link	{
+
+	color:white;
+	
+}
+
+.nav-mobi-width	{
+	  
+	width:75%;  
+	  
+  }
+  
+.navbar-myspacing	{
+
+	margin:0px 30px;
+	font-size:16px;
+	color:white;
+	font-weight:700;
+	letter-spacing:2px;
+	
+}
+
+/* Footer */
+
+.back-img	{
+
+	position:absolute;
+	z-index:-1;
+	top:0;
+	left:0;
+	
+}	
+
+#loop-bg	{
+
+	opacity:5%;
+	
+}
+
+.icon-hover img	{
+
+	transition:0.4s ease-in-out;
+	
+}
+
+.icon-hover img:hover	{
+
+	transform: scale(1.2);
+	
+}
+
+
+/*-------------------------------------------------------  RESOLUTION 1920PX ------------------------------------------------------*/
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+	
+  footer	{
+	
+	padding-top:35px;
+	 
+  }
+  
+  .top-space	{
+	
+	margin-top:150px;
+	
+  }
+  
+  .footer-width		{
+	  
+	width:70%  
+	  
+  }
+  
+}
+
+/*------------------------------------------------------- Desktop RESOLUTION 1440PX ------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1440px) {
+	
+  footer	{
+	
+	padding-top:10px;
+	 
+  }
+  
+  .top-space	{
+	
+	margin-top:55px;
+	
+  }
+  
+  .footer-width		{
+	  
+	width:70%  
+	  
+  }
+
+   .mobi-socban-icons > img	{
+
+	width:40px;
+	height:40px;
+  
+  }
+  
+  .mobi-socban-flex > h1	{
+
+	font-size:24px;
+	padding-top:10px;
+  
+  }
+
+}
+
+/*------------------------------------------------------- Laptop RESOLUTION 1200PX ------------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	
+  
+  footer	{
+	  
+	 padding-top:10px
+	  
+	  
+  }
+  
+  .top-space	{
+	
+	margin-top:75px;
+	
+  }
+  
+  .footer-width		{
+	  
+	width:70%  
+	  
+  }
+  
+  .mobi-socban-icons img	{
+	
+	margin-top:-10px;
+	width:40px;
+	height:40px;
+  
+  }
+  
+  .mobi-socban-flex > h1	{
+
+	font-size:24px;
+	padding-top:10px;
+  
+  }
+  
+  .socban-text	{
+	  
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	  
+  }
+  
+  #Join	 {
+	  
+	  font-size:0.7em;
+	  
+  }
+  
+}
+
+
+/*------------------------------------------------------- TABLET RESOLUTION 992PX ------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+	
+	
+  
+  footer	{
+	  
+	 padding-top:10px
+	  
+	  
+  }
+  
+  .top-space	{
+	
+	margin-top:50px;
+	
+  }
+  
+  .footer-width		{
+	  
+	width:80%  
+	  
+  }
+  
+  .mobi-socban-flex		{
+	
+	display:flex;
+	flex-direction:row;
+	
+  }
+  
+  .mobi-socban-icons > img	{
+
+	width:50px;
+	height:50px;
+  
+  }
+  
+  .mobi-socban-flex > h1	{
+
+	font-size:24px;
+	padding-top:10px;
+  
+  }
+  
+  .socban-text	{
+	  
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:80%;
+	  
+  }
+  
+  #Join	 {
+	  
+	  font-size:10px;
+	  width:70%;
+	  
+  }
+  
+  .res-text	{
+	
+	font-size:0.8em;
+		
+	}
+  
+}
+
+
+/*------------------------------------------------------- PHONE RESOLUTION 768PX ------------------------------------------------------*/
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+	
+	.subheadercon	{
+	
+	width:100%;
+	
+}
+	
+  .logo	{
+	  
+	width:100px;
+	height:10px;
+	padding:0;
+	  
+  }
+  
+  .navbar-myspacing	{
+
+	margin:0;
+	font-size:14px;
+	color:white;
+	
+}
+  
+  .nav-mobi-width	{
+	  
+	width:100%;  
+	
+	  
+  }
+  
+  .nav-icons-size	{
+	  
+	width:30px;
+	height:35px;
+	padding:0px;
+	
+	  
+  }
+  
+  .leftspace	{
+	  
+	//margin-left:30px;  
+	  
+  }
+  
+  .navbar-toggler	{
+	  
+	font-size:10px;
+	  
+  }
+  
+  .product-icon	img {
+	  
+	width:60%;
+	height:100%	
+	  
+  }
+  
+  .mqe-text	h5{
+	  
+	font-size:1em;
+	  
+  }
+  
+  .mqe-text	h6{
+	  
+	font-size:0.8em;
+	  
+  }
+  
+  footer	{
+	  
+	 padding-top:10px
+	  
+	  
+  }
+  
+  .top-space	{
+	
+	margin-top:25px;
+	
+  }
+  
+  .footer-width		{
+	  
+	width:100%  
+	  
+  }
+  
+  .mobi-socban-flex		{
+	
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	
+  }
+  
+  .mobi-socban-icons	{
+	  
+	 width:40%; 
+	  
+  }
+  
+  .mobi-socban-icons  img	{
+
+	width:40px;
+	height:40px;
+  
+  }
+  
+    .mobi-socban-icons a	{
+
+	width:100%;
+	
+  
+  }
+  
+  .mobi-socban-flex  h1	{
+
+	font-size:1.4em;
+	padding-top:10px;
+	margin-left:10%;
+	width:100%;
+	
+  
+  }
+  
+  #Join	 {
+	  
+	  display:none;
+	  
+  }
+  
+  .socban-text	{
+	width:50%;
+	  
+  }
+  
+  .res-text	{
+	
+	font-size:0.8em;
+		
+	}
+	
+	#products	{
+		
+		display:flex;
+		flex-direction:column;
+		
+		
+	}
+	
+	#loop-bg	{
+	
+	opacity:0%;
+	display:none;
+	
+}
+	
+  
+}
+
+  
+
+

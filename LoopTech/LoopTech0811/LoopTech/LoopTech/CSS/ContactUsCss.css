@@ -1,0 +1,56 @@
+*	{
+	padding:0;
+	margin:0;
+
+	font-family: 'Montserrat', sans-serif;
+}
+.Contact { 
+
+	background: rgb(166,233,228);
+    background: linear-gradient(180deg, rgba(166,233,228,1) 0%, rgba(82,197,189,1) 98%);
+	width:100%;
+	position:relative;
+
+}
+
+.col-lg-10 h3 {
+	margin-left:25px;
+	padding-top:18px;
+	color:#7e7e7e;
+	font-size:24px;
+	font-weight:bold;
+}
+.col-lg-10 span {
+	text-decoration-line: underline;
+	text-decoration-color: #52c5bd;
+	text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.col-auto {
+	margin-left:22px;
+}
+.image-place {
+	position:absolute;
+	top:38%;
+	right:15%;
+}
+.contact-panel {
+	margin-top:-15%;
+	padding:30px;
+}
+
+/*-------------------------------------------------------  RESOLUTION 1920PX ------------------------------------------------------*/
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	

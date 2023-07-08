@@ -1,0 +1,305 @@
+
+
+.box-shadow		{
+	
+
+-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.02);
+-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.02);
+box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.02);
+
+
+}
+
+.itembox {
+
+    transition: 0.3s ease-in-out;
+
+}
+
+.itembox:hover {
+
+    -webkit-transform:scale(1.02); /* Safari and Chrome */
+    -moz-transform:scale(1.02); /* Firefox */
+    -ms-transform:scale(1.02); /* IE 9 */
+    -o-transform:scale(1.02); /* Opera */
+    transform:scale(1.02);
+
+}
+
+.btn-login	{
+	
+	color:#fff;
+	background:#52c5bd;
+	padding:10px 50px;
+	font-weight:700;
+	border:none;
+	transition:0.5s ease;
+    margin-bottom:25px;
+    margin-top:25px
+}
+
+.btn-login:hover	{
+	
+	color:#fff;
+	background:linear-gradient(360deg, rgba(82,197,189,0.6) 0%, rgba(82,197,189,1) 100%);;
+	padding:10px 50px;
+	transition:0.5s ease;
+	
+	
+}
+/*-------------------------------------------------------  RESOLUTION 1920PX ------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+	
+	.searchbox	{
+	
+		display:flex;
+		flex-direction:row;
+		width:100%;		
+	
+	}
+	
+	.searchbar	{
+		
+		width:21%;
+		display:flex;
+		flex-direction:column;	
+		gap:2em;
+		
+	}
+	
+	.product-display	{
+		
+		width:70%;
+		
+	}
+	
+	.search-filter-boxwidth		{
+	
+		width:100%;
+	
+	}
+	
+	.only-large		{
+		
+		
+	}
+	
+	.only-mobile	{
+	
+		display:none;
+	
+	}
+
+    .mobilelanding {
+
+        display:flex;
+        flex-direction:row;
+        padding:20px;
+
+    }
+
+    .details-width {
+
+        width:40%;
+
+    }
+
+
+	
+}
+
+/*------------------------------------------------------- Laptop RESOLUTION 1200PX ------------------------------------------------------*/
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  
+  	.searchbox	{
+				
+	    
+
+	}
+	
+	.searchbar	{
+		
+		width:100%;
+		display:flex;
+		flex-direction:row;	
+		//gap:2em;
+		
+	}
+	
+	.product-display	{
+		
+		width:100%;
+		
+	}
+	
+	.search-filter-boxwidth		{
+	
+		width:20%;
+	
+	}
+  
+		.only-large		{
+		
+		display:none;
+		
+	}
+	
+	.only-mobile	{
+	
+	
+			width:100%;
+	
+	}
+
+    .mobilelanding {
+
+        display:flex;
+        flex-direction:row;
+        padding:20px;
+
+    }
+
+    .details-width {
+
+        width:40%;
+
+    }
+  
+}
+
+
+/*------------------------------------------------------- TABLET RESOLUTION 992PX ------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	
+	.searchbox	{
+	
+		display:flex;
+		flex-direction:column;
+		align-items:center;		
+	
+	}
+	
+	.searchbar	{
+		
+		width:100%;
+		display:flex;
+		flex-direction:row;	
+		justify-content:center;
+		//gap:2em;
+		
+	}
+	
+	.product-display	{
+		
+		width:100%;
+		
+	}
+	
+	.search-filter-boxwidth		{
+	
+		width:10%;
+	
+	}
+	
+	.only-large		{
+		
+		display:none;
+		
+	}
+	
+	.only-mobile	{
+	
+	
+			width:100%;
+	
+	}
+	
+    .mobilelanding {
+
+        display:flex;
+        flex-direction:column;
+        padding:20px;
+
+    }
+
+    .details-width {
+
+        width:100%;
+
+    }
+  
+}
+
+
+/*------------------------------------------------------- PHONE RESOLUTION 768PX ------------------------------------------------------*/
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+
+    .mobilelanding {
+
+        display:flex;
+        flex-direction:column;
+        padding:20px;
+
+    }
+
+    .details-width {
+
+        width:100%;
+
+    }
+	
+	.searchbox	{
+	
+		display:flex;
+		flex-direction:column;
+		align-items:center;		
+	
+	}
+	
+	.searchbar	{
+		
+		width:100%;		
+		display:flex;
+		flex-direction:row;	
+		justify-content:center;
+		gap:0.5em;
+		
+	}
+	
+	.product-display	{
+		
+		width:100%;
+		
+	}
+	
+	.search-filter-boxwidth		{
+	
+		width:20%;				
+	
+	}
+	
+	.only-large		{
+		
+		display:none;
+		
+	}
+	
+	.only-mobile	{
+	
+		
+		width:100%;
+		
+	
+	}
+  
+}
+
+  
+
+
